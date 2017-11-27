@@ -1,0 +1,9 @@
+\documentclass[tikz, margin=3mm]{standalone}
+
+\begin{document}
+\begin{tikzpicture}[Num/.style={circle, draw, fill=white, minimum size=9mm, inner sep=1pt}]
+  \draw[very thick] (0,0) circle(2cm);
+  \foreach  \n [count=\a from 0] in {1, 1.41, 1.73, 2, 3, 3.14, $\pi$, $\phi$, 1.61, 0.96}
+    \node[Num] at (\a*36:2) {\n};
+\end{tikzpicture}
+\end{document}
