@@ -1,0 +1,9 @@
+\documentclass[tikz, margin=3mm]{standalone}
+
+\begin{document}
+\begin{tikzpicture}
+  \draw[very thick] (0,0) circle(2cm);
+  \foreach \a in {0,...,9}
+    \draw (\a*36:2) circle (4mm);
+\end{tikzpicture}
+\end{document}
