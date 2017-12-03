@@ -1,0 +1,17 @@
+﻿
+\begin{tikzpicture}
+
+   \draw (1,0) -- (0,0) -- (0,1);
+   \draw (0,0) |- (1,1);
+\draw (0,0) .. controls (1,1) .. (4,0)
+      (5,0) .. controls (6,0) and (6,1) .. (5,2);
+
+ \draw (0,0) circle [radius=1.5];
+\draw (0,0) circle (2cm); % old syntax
+\draw (0,0) circle [x radius=1.5cm, y radius=10mm];
+\draw (0,0) circle (1.2cm and 8mm); % old syntax
+\draw (0,0) circle [x radius=1cm, y radius=5mm, rotate=30];
+\draw[rotate=30] (0,0) ellipse (20pt and 10pt); 
+
+\end{tikzpicture}
+
